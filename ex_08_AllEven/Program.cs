@@ -1,10 +1,6 @@
 ﻿Console.Write("Input any integer number: ");
-string number = Console.ReadLine();
-int N = int.Parse(number);
-for (int i = 1; i <= N; i++)
+int N = int.Parse(Console.ReadLine());
+for (int i = 2; i <= N; i = i + 2)
 {
-    if (i % 2 == 0)
-    {
-        Console.Write($"{i}, ");
-    }
+    Console.Write($"{i}, ");
 }
